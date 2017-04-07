@@ -1,0 +1,56 @@
+<ion-pane style="background: url(img/blk2.jpg) center; background-size: cover;"> 
+	
+	<ion-view title="Signup" style="background: url(img/blk2.jpg) center; background-size: cover;>
+	<div class="spacer" style="height: 30px;"></div>
+    <ion-content padding="true" class="padding ">
+	<div class="animated flipInX" >
+		<div class="item item-divider">
+			<div class="item item-body">
+				<div class="bar bar-header bar-positive" style="background:transparent;">
+					   <h1 class="title" style="color:#FF9800"><b>REGISTER COMPANY</b></h1>
+					   <hr>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="spacer" style="height: 40px;"></div>
+        <form class="list">
+            <ion-list>
+                <label class="item item-input">
+                    <span class="input-label">Company name</span>
+					
+<!--					Note: data object contains all the detials about the user registering.			-->
+                    <input type="text" style="border-bottom:1px solid #009688" placeholder="" ng-model="data.cname">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">User Id(email)</span>
+                    <input type="email" style="border-bottom:1px solid #009688" placeholder="" ng-model="data.userid">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" style="border-bottom:1px solid #009688" placeholder="" ng-model="data.password">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Phone</span>
+                    <input type="number" style="border-bottom:1px solid #009688" placeholder="" ng-model="data.phone">
+                </label>
+            
+				<label class="item item-input">
+					<span class="input-label">Address</span>
+					<input type="text" style="border-bottom:1px solid #009688" placeholder="" ng-model="data.address">
+				</label>
+				
+			</ion-list>
+	<!--		//data object is passed to the signup()				-->
+		<div class="spacer" style="height: 20px;"></div>
+            <button ng-click="signup(data)" class="button button-positive button-block ">Sign up</button>
+		
+			<a ui-sref="register" ng-click="cReturn()" id="login-button2" class="button bClass button-block">Or Sign in</a>
+        </form>
+    </ion-content>
+	</ion-view>
+
+	
+
+</ion-pane>

@@ -1,0 +1,7 @@
+{
+"name": "Job Comet",
+"description": "job comet application",
+"repository":"https://github.com/kaushikpatel369/jobcomet.git",
+"logo":"http://node-js-sample.herokuapp.com/node.svg",
+"keywords": ["ionic", "express", "static"]
+}

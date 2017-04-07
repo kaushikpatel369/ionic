@@ -1,0 +1,99 @@
+<ion-pane style="background: url(img/b1.png) center; background-size: cover;"> 
+    <ion-content style="background: url(img/b1.png) center; background-size: cover;">
+	  
+		<ion-tabs class="tabs-top tabs-striped" class="tabClr" style="padding:10px">
+			<ion-tab  title="<h4>Login</h4>">
+				<ion-nav-view name="Login-Page">					
+					<div class="list" style="padding-top:80px">
+						<div class="item item-input-inset" style="padding-top:60px">
+							<label class="item item-input-wrapper" style="border-bottom:1px solid #c61313">
+								<i class="icon ion-edit placeholder-icon"></i>
+								<input type="text"  ng-model="user.username" style="color:black" placeholder="User Name">
+							</label>
+							<hr>
+						</div>
+						<div class="item item-input-inset" style="">
+							<label class="item item-input-wrapper" style="border-bottom:1px solid #c61313">
+								<i class="icon ion-edit placeholder-icon"></i>
+								<input type="password" ng-model="user.password" style="color:black" placeholder="Password">
+							</label>
+						</div>							
+						<div class="padding" style="padding-top:40px">
+							<button ui-sref="app.profile" class="button button-block button-positive" ng-click="login(user)"><font color=""><i class="icon ion-log-in"></i> <b>Login</b></font></button>
+						</div>
+							
+						<div class="row  padding removePM">
+							<div class="col"> <a class=" button-positive button button-block" ng-click="facebookSignIn()"><i class="icon ion-social-facebook"></i></a> </div>
+							<div class="col"> <a class="button-assertive button button-block" ng-click="googleSignIn()"><i class="icon ion-social-google"></i></a> </div>
+						</div>
+							
+						
+					</div>
+		 		</ion-nav-view>
+		    </ion-tab>
+			
+			<ion-tab title="<h4>Register</h4>">
+				<ion-nav-view name="Register-Page">
+					<div class = "list" style="padding:50px">			
+						<div class="list" style="padding-top:50px">									
+							<div class="item item-input-inset" style="padding:none">
+								<label class="item item-input-wrapper" style="border-bottom:1px solid #c61313">
+								    <i class="icon ion-edit placeholder-icon"></i>
+									<input type="text"  ng-model="student.name" style="color:black" placeholder="Full Name" required>
+								</label>
+								<hr>
+							</div>
+							<div class="item item-input-inset">
+								 <label class="item item-input-wrapper" style="border-bottom:1px solid #c61313">
+									<i class="icon ion-edit placeholder-icon"></i>
+									<input type="text" ng-model="student.college" style="color:black" placeholder="College Name">
+								</label>
+							</div>
+							<div class="item item-input-inset" style="padding:none">
+								<label class="item item-input-wrapper" style="border-bottom:1px solid #c61313">
+									<i class="icon ion-edit placeholder-icon"></i>
+									<input type="text" ng-model="student.stream" style="color:black" placeholder="Stream">
+								</label>
+								<label class="item item-input-wrapper" style="border-bottom:1px solid #c61313">
+									<i class="icon ion-edit placeholder-icon"></i>
+									<input type="text" ng-model="student.sem" style="color:black" placeholder="Semester">
+								</label>
+							</div>
+							
+							<div class="item item-input-inset">
+								<label class="item item-input-wrapper" style="border-bottom:1px solid #c61313">
+									<i class="icon ion-edit placeholder-icon"></i>
+									<input type="text" ng-model="student.email" style="color:black" placeholder="Email">
+								</label>
+							</div>
+							<div class="item item-input-inset">
+								<label class="item item-input-wrapper" style="border-bottom:1px solid #c61313">
+									<i class="icon ion-edit placeholder-icon"></i>
+									<input type="number" ng-model="student.phone" style="color:black" placeholder="Mobile No">
+								</label>
+							</div>
+							<div class="item item-input-inset">
+								<label class="item item-input-wrapper" style="border-bottom:1px solid #c61313">
+									<i class="icon ion-edit placeholder-icon"></i>
+							
+									<input type="text" ng-model="student.username" style="color:black" placeholder="Username">
+								</label>
+							</div>
+							<div class="item item-input-inset">
+								<label class="item item-input-wrapper" style="border-bottom:1px solid #c61313">
+									<i class="icon ion-edit placeholder-icon"></i>
+									<input type="password" ng-model="student.password" style="color:black" placeholder="Password">
+								</label>
+							</div>
+						</div>
+						<div class="padding">
+							<button class="button button-assertive button-outline button-block" ng-click="register(student)">
+								Register		
+							</button>
+						</div>							
+					</div>
+			</ion-tab>
+		</ion-tabs>		
+			
+    </ion-content>
+ </ion-pane>

@@ -1,0 +1,51 @@
+
+    <ion-pane style="background: url(img/b1.png) center; background-size: cover;"> 
+      <ion-content style="background: url(img/b1.png) center; background-size: cover;">
+	<!--  	<div class="bar bar-header" style="background:transparent;text-align:center" >
+						<h2 class="hone" class="title" style="text-align:center">Register Your Company</h2>					
+		</div>
+
+		<div class = "row" style="padding-top:30px">
+			<div class = "col">
+				<div class="padding">
+						<h1 class="hone">Register Yourself</h1>
+			    </div>
+		</div>
+		</div>
+-->		
+		<div class="col">
+			<div class="ion-list" style="text-align:center">
+				<label class="item"><font color="#e21818">Register Your Company</font></label>
+			</div>
+		</div>
+		<div class="list" style="padding-top:50px">
+			
+				<div class="item item-input-inset" style="padding:none">
+				  <label class="item item-input-wrapper" style="border-bottom:1px solid #c61313">
+				  <i class="icon ion-edit placeholder-icon"></i>
+				  <input type="text"  ng-model="company.name" style="color:black" placeholder="Company Name">
+				  </label>
+				  <hr>
+				</div>
+				<div class="item item-input-inset" style="padding:none">
+				  <label class="item item-input-wrapper" style="border-bottom:1px solid #c61313">
+				  <i class="icon ion-edit placeholder-icon"></i>
+				  <input type="text" ng-model="company.email" style="color:black" placeholder="Email">
+				  </label>
+				</div>
+				<div class="item item-input-inset">
+				  <label class="item item-input-wrapper" style="border-bottom:1px solid #c61313">
+				  <i class="icon ion-edit placeholder-icon"></i>
+				  <input type="text" ng-model="company.address" style="color:black" placeholder="Adress">
+				  </label>
+				</div>
+					
+		</div>
+		<div class="padding">
+            <button class="button button-assertive button-outline button-block" ng-click="register(company)">
+					Register		
+			</button>
+        </div>
+			
+      </ion-content>
+    </ion-pane>

@@ -1,0 +1,46 @@
+<ion-pane style="background:#08160d; background-size: cover;"> 
+<ion-content>
+	<div class="row rw" style="background:#2e4738">
+			<div class="col col-15" style="text-align:left">{{currentdate | date:'dd/MM/yyyy'}}</div>
+			<div class="col col-60" style="text-align:center">Paper: &nbsp{{classcode}}&nbsp Total Class({{ttlcls}})</div>
+			<div class="col col-15" style="text-align:right"><button  class="button button-small icon ion-plus-round" ng-disabled="clsdisabled" ng-click="addclass()" style="background:orange"></button></div>
+						<!--<h1 class="title"><i class="icon ion-cube"></i>  MCA  </h1>-->
+			<!--<div class="dropdown col col-30" style="text-align:right">
+			<button ng-click="showpop()" class="dropdown-toggle button button-small icon ion-person"></button>
+			</div>-->
+	<!--	<div class="col col-30" style="text-align:right">
+			<button class = "button button-small item item-select icon ion-more" style="background:orange">
+			   
+			   <select style="background:transparent">
+			      
+				  <option style="background:#08160d">Option 1</option>
+				  <option>Option 2</option>
+				  <option>Option 3</option>
+			   </select>
+			</button>
+		</div>-->
+	</div>
+
+
+	
+
+
+	<div class="row rwdata " style="padding-top:5px">
+		<div class="col col-20" style="background:#2e4738">ROLL</div>
+		<div class="col col-40" style="background:#2e4738">NAME</div>
+		<div class="col col-10" style="background:#2e4738">P/A</div>
+		<div class="col col-20" style="background:#2e4738">TOTAL</div>
+		<div class="col col-10" style="background:#2e4738">N/A</div>
+	</div>
+	<div class="row" ng-repeat="data in std">
+		<div class="col col-20">{{data.Roll}}</div>
+		<div class="col col-40">{{data.name}}</div>
+		<div class="col col-10"><button  class="button button-small button-balanced icon ion-plus-round" ng-disabled="data.isdisabled" ng-click="atdata(data)"></button></div>
+		<div class="col col-20">{{ttl[$index]}}</div>
+		<div class="col col-10"><button  class="button button-small button-assertive icon ion-close-round" ng-disabled="data.isdisabledred" ng-click="remove(data)"></button></div>
+	</div>
+	
+	
+	
+</ion-content>
+</ion-pane>
